@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum Cost Spanning Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Minimum Cost Spanning Tree</h1>
+    <p>Visualize Kruskal's and Prim's Algorithms</p>
+</header>
+
+<div class="container">
+
+    <section class="card">
+        <h2>Graph Input</h2>
+
+        <div class="input-row">
+            <input type="text" id="fromNode" placeholder="From (A)">
+            <input type="text" id="toNode" placeholder="To (B)">
+            <input type="number" id="weight" placeholder="Cost">
+            <button onclick="addEdge()">Add Edge</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="runKruskal()">Kruskal's Algorithm</button>
+            <button onclick="runPrim()">Prim's Algorithm</button>
+            <button class="reset" onclick="resetGraph()">Reset</button>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Graph</h2>
+        <div id="graph"></div>
+    </section>
+
+    <section class="card">
+        <h2>Edges</h2>
+        <div id="edgeList">
+            <p>No edges added yet.</p>
+        </div>
+    </section>
+
+    <section class="card result">
+        <h2>Result</h2>
+        <div id="result">
+            <p>Run an algorithm to find the Minimum Cost Spanning Tree.</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Minimum Cost Spanning Tree | Data Structures & Algorithms</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #263238;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #263238;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 160px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #37474f;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.reset {
+    background: #c62828;
+}
+
+#graph {
+    min-height: 350px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.node {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #37474f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.edge-line {
+    position: absolute;
+    height: 3px;
+    background: #999;
+    transform-origin: left center;
+    z-index: 1;
+}
+
+.edge-label {
+    position: absolute;
+    background: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    z-index: 3;
+    border: 1px solid #ccc;
+}
+
+.edge-item {
+    padding: 10px;
+    margin: 7px 0;
+    background: #f1f3f4;
+    border-radius: 6px;
+}
+
+.mst-edge {
+    background: #dcedc8;
+    border-left: 5px solid #388e3c;
+}
+
+.result {
+    text-align: center;
+}
+
+.result h3 {
+    margin: 15px 0;
+}
+
+.total-cost {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    background: #263238;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
